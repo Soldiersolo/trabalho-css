@@ -18,19 +18,16 @@
     <h2>veja o que separamos para você!</h2>
     <br>
     <br>
-    <div>
+    <div class="grid-container">
     <button id="tv" class="grid-item"><a href="https://www.mercadolivre.com.br/smart-tv-50-4k-uhd-50cu7700-2023-preta-samsung/p/MLB23899432#polycard_client=recommendations_home_navigation-recommendations&reco_backend=machinalis-homes-univb-equivalent-offer&wid=MLB3695483653&reco_client=home_navigation-recommendations&reco_item_pos=1&reco_backend_type=function&reco_id=d6c815ae-aa74-4857-bec6-ddd583b7dc40&sid=recos&c_id=/home/navigation-recommendations/element&c_uid=6d36c34c-4885-4418-8206-32bd897b7f37">Quero</a></button>
     <img src="https://http2.mlstatic.com/D_NQ_NP_2X_733256-MLU75135791885_032024-F.webp" width="200px" id="compra">
-    <br>
-    <br>
+
     <button id="joystick" class="grid-item"><a href="https://www.mercadolivre.com.br/controle-fca-compativel-com-ps4-joystick-manete-ps4-pc-cor-preto/p/MLB27058601#polycard_client=recommendations_home_fourth-trend-function-recommendations&reco_backend=fourth_trend_function&wid=MLB4982914060&reco_client=home_fourth-trend-function-recommendations&reco_item_pos=1&reco_backend_type=function&reco_id=4b1d71a0-4173-491c-ad85-322ee934aec5&sid=recos&c_id=/home/fourth-trend-recommendations/element&c_uid=da0cd83f-b404-44f8-9b5a-2a936148143e">Quero</a></button>
     <img id="joystick" class="grid-item" src="https://http2.mlstatic.com/D_NQ_NP_2X_822135-MLU72731733507_112023-F.webp" width="200px">
-    <br>
-    <br>
+    
     <button class="grid-item" id="chuteira"><a href="https://produto.mercadolivre.com.br/MLB-3477180081-chuteira-futsal-penalty-max-1000-ecoknit-salo-original-pro-_JM?searchVariation=variationID#polycard_client=recommendations_home_fifth-trend-function-recommendations&reco_backend=fifth_trend_function&reco_client=home_fifth-trend-function-recommendations&reco_item_pos=4&reco_backend_type=function&reco_id=07b962cf-2782-46ab-a62c-b80c12d59428&c_id=/home/fifth-trend-recommendations/element&c_uid=e88f2734-d2fe-4fd8-8897-bc4057dee756">Quero</a></button>
     <img class="grid-item" id="chuteira" src="https://http2.mlstatic.com/D_NQ_NP_2X_913586-MLB75232198070_032024-F.webp" width="200px">
-    <br>
-    <br>
+    
     <button class="grid-item" id="nike"><a href="https://produto.mercadolivre.com.br/MLB-3281967605-bluso-nike-dri-fit-masculino-_JM#position%3D2%26search_layout%3Dgrid%26type%3Ditem%26tracking_id%3Ddc968ff5-5648-4354-92f8-632ceaaca66b">Quero</a></button>
     <img class="grid-item" id="nike" src="https://http2.mlstatic.com/D_NQ_NP_2X_615252-MLB68849139997_042023-F.webp" width="200px">
 </div>
@@ -55,6 +52,23 @@ text-align: center;
 #compra {
     position: relative;
     align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "img img img"
+    "btn btn btn";
+}
+
+img {
+    grid-area: img;
+}
+
+button {
+    grid-area: btn;
 }
 
 </style>

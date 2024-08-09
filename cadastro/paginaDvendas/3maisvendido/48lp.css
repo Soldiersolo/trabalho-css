@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+  background-color: black;
+}
+header {
+    border: 4px solid;
+border-radius: 10px;
+background-color: white;
+margin-left: 0px;
+margin-top: 0px;
+margin-right: 0px;
+}
+
+#preço {
+    border: solid;
+    background-color: white;
+}
+
+#subtitulo {
+    color: white;
+    border: 3px solid;
+    border-radius: 10px ;
+    border-color: black;
+    background-color: rgb(58, 58, 58);
+}
+
+.descrição {
+    border: 3px solid;
+    border-radius: 10px;
+    border-color: black;
+    background-color: white;
+}
+img {
+    width: 250px;
+    justify-content: start;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: white;
+}
