@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: rgb(38, 37, 37);
+}
+
+h1, h2 {
+    color: #d8d7d7;
+}
+
+main {
+    display: flex;
+    flex-flow: row;
+    gap: 20px;
+}   
+
+.book-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+div {
+    flex-direction: column;
+    flex: 25%;
+}
+
+.book-item a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.book-item a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    right: 550px;
+    bottom: 400px;
+    flex-direction: row;
+    text-align: center;
+    border: 5px solid;
+    border-color: black ;
+    background-color: white;
+    color: black;
+ 
+}
+
+#menu {
+    color: black;
+}
+#Titulo1 {
+    background-color: white;
+    border: 3px solid;
+    color: black;
+}
+
+.subtitulo {
+    color: black;
+    border: 2px solid;
+    border-color: black;
+    background-color: white;
+}
+
+#blx {
+    color: #007bff;
+}
+
+.compras {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
