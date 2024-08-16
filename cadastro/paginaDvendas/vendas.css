@@ -6,6 +6,10 @@ body {
     text-align: center;
     background-color: rgb(32, 32, 32);
     border: 5px solid;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    
 }
 div {
     text-align: center;
@@ -22,4 +26,4 @@ main{
 }
 .grid-container{
  display:grid ;
- grid-template-columns: 1fr 1fr;}
+ grid-template-columns: 1fr 1fr 1fr;}

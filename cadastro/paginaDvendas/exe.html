@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Vendas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: rgb(38, 37, 37);
+            color: #d8d7d7;
+        }
+
+        h1, h2 {
+            color: #d8d7d7;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .book-item {
+            flex: 1 1 calc(25% - 20px);
+            box-sizing: border-box;
+        }
+
+        .book-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .book-item a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .book-item a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            border: 5px solid;
+            border-color: black;
+            background-color: white;
+            color: black;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        #Titulo1 {
+            background-color: white;
+            border: 3px solid;
+            color: black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .subtitulo {
+            color: black;
+            border: 2px solid;
+            border-color: black;
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #blx {
+            color: #007bff;
+        }
+
+        .compras {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Media Queries para dispositivos menores */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+
+            .book-item {
+                flex: 1 1 100%;
+            }
+
+            .compras {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            }
+
+            #Titulo1, .subtitulo {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1, h2 {
+                font-size: 1.5em;
+            }
+
+            footer {
+                font-size: 0.9em;
+            }
+
+            .compras {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="Titulo1">Vamos às Compras?</h1>
+
+    <h2>Os 4 mais comprados</h2>
+
+    <main>
+        <div class="book-item">
+            <img src="img/A Divina comédia.jpg" alt="A Divina Comédia">
+            <label for="Dante Alighieri">
+                <a href="top4/1maisvendido/adc.html">A Divina Comédia</a>
+            </label>
+        </div>
+
+        <div class="book-item">
+            <img src="img/th.jpg" alt="Manual de Persuasão do FBI">
+            <label for="Jack Schafer">
+                <a href="top4/2maisvendido/mpfbi.html">Manual de Persuasão do FBI</a>
+            </label>
+        </div>
+
+        <div class="book-item">
+            <img src="img/48 Leis do Poder.jpg" alt="As 48 Leis do Poder">
+            <label for="Robert Greene">
+                <a href="top4/3maisvendido/48lp.html">As 48 Leis Do Poder</a>
+            </label>
+        </div>
+
+        <div class="book-item">
+            <img src="img/arte da guerra.jpg" alt="A Arte da Guerra">
+            <label for="Sun Tzu">
+                <a href="top4/4maisvendido/aatdg.html">A Arte da Guerra</a>
+            </label>
+        </div>
+    </main>
+
+    <h1 class="subtitulo"><b>Hora de comprar</b>.</h1>
+    <label><input type="text" placeholder="Digite aqui"><button>pesquisar</button></label>
+
+    <main class="compras">
+        <!-- Livros adicionados à grade responsiva -->
+        <!-- Exemplo de um item na grade -->
+        <div class="book-item">
+            <img src="https://www.jbchost.com.br/editorajbc/wp-content/uploads/2022/06/tokyo-revengers-01-capa-p-300x455.jpg" alt="Tokyo Revengers vol1">
+            <label for=""><a href="paginadelivros/tokyo revengers/Tokyo revengers1/index.html">Tokyo Revengers vol1</a></label>
+        </div>
+
+        <!-- Adicione mais itens de livro aqui -->
+        <!-- Seguindo o mesmo padrão de estrutura -->
+    </main>
+
+    <footer>
+        <h1 id="menu">Menu</h1>
+        <menu>
+            <button><a href="menu/details/details.html">Details</a></button>
+            <button><a href="menu/Qmsomso/Quem somos.html">Quem Somos?</a></button>
+        </menu>
+    </footer>
+</body>
+</html>
